@@ -3,39 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>The Universe</title>
+  <title>Solid Black</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>The Universe</h1>
-  <!-- <button id="menu-btn" >&#9776</button> -->
+  <button id="menu-btn" >&#9776</button>
   <nav>
+    <h1 id = "sitename">Solid Black</h1>
+
     <ul>
-      <li class="">Home</li>
-      <li class="">Our Mission</li>
-      <li class="">The Universe</li>
-      <li class="">Trip to Mars</li>
-      <li class="">Contact Us</li>
+      <li class="current"><a href="#home">Home</a></li>
+      <li><a href="#ourMission">Our Mission</a></li>
+      <li><a href="#theUniverse">The Universe</a></li>
+      <li><a href="#tripToMars">Trip to Mars</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
   </nav>
 
-  <section id="home">
+  <section id="home" data-stellar-background-ratio="0.5">
     <h1>Home</h1>
   </section>
-  <section id="ourMission">
+  <section id="ourMission" data-stellar-background-ratio="0.5">
     <h1>Our Mission</h1>
   </section>
-  <section id="theUniverse">
+  <section id="theUniverse" data-stellar-background-ratio="0.5">
     <h1>Discovering The Universe</h1>
   </section>
-  <section id="tripToMars">
+  <section id="tripToMars" data-stellar-background-ratio="0.5">
     <h1>Trip To Mars</h1>
   </section>
-  <section id="contact">
+  <section id="contact" data-stellar-background-ratio="0.5">
     <h1>Contact Us</h1>
   </section>
 
-  <p>Chambray sustainable waistcoat cardigan, godard distillery meggings.  Venmo single-origin coffee iPhone ramps, austin affogato tacos.  Kombucha you probably haven't heard of them put a bird on it, XOXO tumblr iPhone brooklyn offal synth.  Asymmetrical cardigan salvia street art viral.  Kinfolk vegan man braid hammock microdosing, beard four dollar toast gastropub blog cray scenester biodiesel hashtag swag.  Artisan tacos asymmetrical, put a bird on it offal four dollar toast biodiesel chambray small batch marfa keytar actually mustache fap church-key.  Blue bottle austin sustainable, organic chambray direct trade  put a bird on it distillery raw denim kinfolk.</p>
+  <button id="backToTop">^</button>
+
+  <script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script>
+
+  $("nav").onePageNav();
+
+  $.stellar();
+
+  $("#backToTop").click(function(){
+      $(window).scrollTo(0, 700);
+    });
+
+   var menu = $("nav ul");
+
+      $("#menu-btn").click(function(){
+        menu.slideToggle(300);
+    });
+
+      $(window).resize(function(){
+        var w = $(window).width();
+        if (w > 768 && menu.is(":hidden")) {
+        menu.removeAttr("style");
+      }
+      });
+
+  
+
+  </script
+
   
 </body>
 </html>
