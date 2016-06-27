@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
 }
 nav {
   position: fixed;
@@ -8,10 +9,9 @@ nav {
   background-color: black;
   width: 100%;
   text-align: center;
-  /*z-index: 1;*/
   height: 55px;
-  float: right;
 }
+
 ul {
   float: right;
 }
@@ -22,6 +22,37 @@ nav li {
   float: left;
 }
 
-section {
-  height: 700px;
+h1 {
+  color: grey;
+  margin: 0;
 }
+
+section {
+  height: 890px;
+  /*width: 100px;*/
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home {
+ /* height: 600px;
+  width: 500px;*/
+  background-image: url(http://static1.squarespace.com/static/5411e9cce4b0626c6521f8c3/t/550aa60ae4b0f79d2d77b6e4/1426761236881/J16HCHHXGN.jpg?format=2500w);
+}
+
+#ourMission {
+  background-image: url(https://cdn-images-1.medium.com/max/1920/1*dInjJQp5j8BnwJd4GU_OlA.jpeg);
+}
+
+#theUniverse {
+  background-image: url(http://www.marketingfacts.nl/images/imagesblog/5.jpg);
+}
+
+#tripToMars {
+  background-image: url(http://mars.nasa.gov/msl/imgs/2015/08/mars-curiosity-rover-msl-horizon-sky-self-portrait-PIA19808-full.jpg);
+}
+
+#contact {
+  background-image: url(http://www.space.com/images/i/000/021/536/original/pencil-nebula-wide-1920.jpg?interpolation=lanczos-none&fit=around%7C1920:1200&crop=1920:1200;*,*);
+}
+
