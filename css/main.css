@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  /*z-index: 1;*/
+  height: 55px;
+  float: right;
+}
+ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  color: grey;
+  padding: 0 20px;
+  float: left;
+}
+
+section {
+  height: 700px;
+}
