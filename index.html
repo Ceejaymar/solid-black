@@ -12,7 +12,6 @@
   <button id="menu-btn" >&#9776</button>
   <nav>
     <h1 id = "sitename">Solidblack</h1>
-
     <ul>
       <li class="current"><a href="#home">Home</a></li>
       <li><a href="#ourMission">Our Mission</a></li>
@@ -21,16 +20,13 @@
       <li><a href="#contact">Contact Us</a></li>
     </ul>
   </nav>
-
   <section id="home" data-stellar-background-ratio="0.5">
   <div class="welcoming"> <h1 id="welcome">Welcome to   Solidblack</h1>
     <h2 id="newAge">Private Space Travel</h2>
   </div> 
     <p id="homeP">NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go.
-
-Here men from the planet Earth first set foot upon the Moon. July 1969 AD. We came in peace for all mankind.
-
-The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>
+    Here men from the planet Earth first set foot upon the Moon. July 1969 AD. We came in peace for all mankind.
+    The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>
   </section>
   <section id="ourMission" data-stellar-background-ratio="0.5">
     <h1>Our Mission</h1>
@@ -57,38 +53,29 @@ The Earth was small, light blue, and so touchingly alone, our home that must be 
           </fieldset>
         </form>
     </div>    
+    <div class="rocket"><img id="rocket" src="http://www.clipartbest.com/cliparts/niB/Xbd/niBXbdg9T.png"</div>
   </section>
-
   <button id="backToTop">^</button>
-
-  <script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
   <script src="js/jquery.nav.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script>
-
-  $("nav").onePageNav();
-
-  $.stellar();
-
-  $("#backToTop").click(function(){
-      $(window).scrollTo(0, 700);
-    });
-
-   var menu = $("nav ul");
-
-      $("#menu-btn").click(function(){
-        menu.slideToggle(300);
-    });
-
-      $(window).resize(function(){
-        var w = $(window).width();
-        if (w > 768 && menu.is(":hidden")) {
-        menu.removeAttr("style");
-      }
+    $("nav").onePageNav();
+    $.stellar();
+    $("#backToTop").click(function(){
+        $(window).scrollTo(0, 700);
       });
+     var menu = $("nav ul");
+        $("#menu-btn").click(function(){
+          menu.slideToggle(300);
+      });
+        $(window).resize(function(){
+          var w = $(window).width();
+          if (w > 768 && menu.is(":hidden")) {
+          menu.removeAttr("style");
+        }
+        });
   </script
-
-  
 </body>
 </html>

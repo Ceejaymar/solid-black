@@ -152,7 +152,41 @@ input, textarea{
   border: 1px solid #rgba(0, 0, 0, .7);
   border-width : 1px 1px 3px;
 }
+.rocket {
+}
 
+#rocket {
+  background-image: url(http://www.clipartbest.com/cliparts/niB/Xbd/niBXbdg9T.png);
+  width: 100px;
+  transform: rotatey(45deg);
+  height: 100px;
+  /*transform: rotatex(90deg);*/
+
+  animation: move 5s infinite alternate;
+  }
+    @keyframes move {
+      0% {
+
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(300px, 0);
+      }
+
+      40% {
+        transform: translate(700px, 0);
+      }
+      60% {
+        transform: translate(1000px, 0);
+      }
+      80% {
+        transform: translate(1300px, 0);
+      }
+      100% {
+        transform: translate(1500px, 0);
+      }
+    
+}
 #starName {
   margin-top: 20px;
 }
