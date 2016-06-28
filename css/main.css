@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 #sitename {
@@ -11,7 +12,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: black;
   width: 100%;
   /*z-index: -1;*/
   text-align: center;
@@ -36,7 +37,6 @@ h1 {
 
 section {
   height: 890px;
-  /*width: 100px;*/
   padding-top: 50px;
   background-size: cover;
   background-attachment: fixed;
@@ -56,6 +56,30 @@ li a:hover {
  /* height: 600px;
   width: 500px;*/
   background-image: url(http://static1.squarespace.com/static/5411e9cce4b0626c6521f8c3/t/550aa60ae4b0f79d2d77b6e4/1426761236881/J16HCHHXGN.jpg?format=2500w);
+}
+.welcoming {
+  font-size: 2em;
+  margin: 50px 0 0 100px;
+}
+#welcome {
+  font-size: 2.5em;
+  color: white;
+}
+
+#newAge {
+  color: white;
+
+}
+
+#homeP {
+  font-family: 'Roboto', sans-serif;
+  padding-right: 30px;
+  margin: auto;
+  color: white;
+  width: 500px;
+  font-size: 1.5em;
+  /*float: right;*/
+  text-align: center;
 }
 
 #ourMission {
@@ -91,7 +115,49 @@ li a:hover {
   background-color: transparent;
 }
 
-/*#menu-btn {
+.contactDiv {
+  text-align: center;
+  font-size : 1.5em;
+}
+
+form {
+  max-width : 500px;
+  margin-top:;
+  margin    : 90px auto;
+  padding   : 20px 20px;
+  background: #f4f7f8;
+  border-radius: 10px;
+}
+fieldset {
+border: none;
+padding-right: 50px;
+}
+input, textarea{
+  font-size: 16px;
+  padding: 15px;
+  margin-right: 40px;
+  width: 100%;
+  background-color: #e8eeef;
+  margin-bottom: 40px;
+}
+#contactButton {
+  margin-left: 15px;
+  padding: 10px;
+  color  : #FFF;
+  background-color: rgba(42, 50, 58, .8);
+  font-size : 18px;
+  text-align: center;
+  border-radius: 10px;
+  width : 100%;
+  border: 1px solid #rgba(0, 0, 0, .7);
+  border-width : 1px 1px 3px;
+}
+
+#starName {
+  margin-top: 20px;
+}
+
+#menu-btn {
   position: fixed;
   top: 2px;
   right:10px;
@@ -99,9 +165,56 @@ li a:hover {
   z-index: 2;
   background: transparent;
   font-size: 2em;
-  color: #FFBB00;
+  color: #efefef;
   cursor: pointer;
   display: none;
-}*/
+}
 
+/*responsive*/
+@media (max-width: 768px) {
+  
+  .welcoming{
+    margin: 50px;
+    text-align: center;
+  }
 
+  #homeP {
+    font-size: 1.3em;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    padding: 0;
+    
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    padding-left: 20px;
+    background: black;
+    width: 100%;
+  }
+
+  nav li {
+    display: block;
+    clear: both;
+    text-align: left;
+    padding: 20px;
+  }
+  }
+
+@media (max-width: 480px) {
+
+  form {
+    max-width: 320px;
+  }
+
+  #homeP {
+    width: 380px;
+    font-size: 1.2em;
+  }
+  
+}

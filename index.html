@@ -3,25 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Solid Black</title>
+  <title>Solidblack</title>
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
 </head>
 <body>
   <button id="menu-btn" >&#9776</button>
   <nav>
-    <h1 id = "sitename">Solid Black</h1>
+    <h1 id = "sitename">Solidblack</h1>
 
     <ul>
       <li class="current"><a href="#home">Home</a></li>
       <li><a href="#ourMission">Our Mission</a></li>
-      <li><a href="#theUniverse">The Universe</a></li>
-      <li><a href="#tripToMars">Trip to Mars</a></li>
+      <li><a href="#theUniverse">Discover</a></li>
+      <li><a href="#tripToMars">Voyage to Mars</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </ul>
   </nav>
 
   <section id="home" data-stellar-background-ratio="0.5">
-    <h1>Home</h1>
+  <div class="welcoming"> <h1 id="welcome">Welcome to   Solidblack</h1>
+    <h2 id="newAge">Private Space Travel</h2>
+  </div> 
+    <p id="homeP">NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go.
+
+Here men from the planet Earth first set foot upon the Moon. July 1969 AD. We came in peace for all mankind.
+
+The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>
   </section>
   <section id="ourMission" data-stellar-background-ratio="0.5">
     <h1>Our Mission</h1>
@@ -33,7 +42,21 @@
     <h1>Trip To Mars</h1>
   </section>
   <section id="contact" data-stellar-background-ratio="0.5">
-    <h1>Contact Us</h1>
+    <h1></h1>
+    <div class="contactDiv">
+    <form action="">
+          <h1>Send us a transmission</h1>
+          <fieldset id="starName">
+            <label for="name">Star Name</label>
+            <input type="text" id="name" name="user_name">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="user_email">
+            <label for="comment">Celestial Comment</label>
+            <textarea id="comment" name="user-comment"> </textarea>
+            <button id="contactButton" onclick="submitButton()">Transmit Message</button>
+          </fieldset>
+        </form>
+    </div>    
   </section>
 
   <button id="backToTop">^</button>
@@ -64,9 +87,6 @@
         menu.removeAttr("style");
       }
       });
-
-  
-
   </script
 
   
